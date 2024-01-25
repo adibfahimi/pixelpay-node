@@ -8,7 +8,7 @@ Pixelpay is a simple blockchain project.
 ./pixelpay-node
 ```
 
-This will start the Pixelpay Node server on `http://localhost:3000`.
+This will start the Pixelpay go server on `http://localhost:3000`.
 
 ## Related Projects
 
