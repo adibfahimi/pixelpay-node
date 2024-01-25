@@ -1,6 +1,6 @@
 # Pixelpay Node
 
-Pixelpay Node is a simple blockchain project.
+Pixelpay is a simple blockchain project.
 
 ## Start the Pixelpay Node:
 
