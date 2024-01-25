@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"log"
 
 	"github.com/adibfahimi/pixelpay-node/routes"
@@ -11,6 +12,10 @@ import (
 )
 
 func main() {
+	port := flag.String("p", "3000", "port to run the node on")
+
+	flag.Parse()
+
 	log.Println("blockchain started")
 
 	app := fiber.New()
@@ -28,5 +33,5 @@ func main() {
 
 	app.Get("/balance/:address", routes.GetBalanceByAddressRoute)
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(":" + *port))
 }
